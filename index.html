@@ -16,6 +16,18 @@
     <button onclick="calculateProduct()">Calculate Product</button>
     <p>Result: <span id="presult"></span></p>
 
+	<h2>Quotient Of Two Numbers</h2>
+    <input type="number" id="Qnum1" placeholder="Enter first number">
+    <input type="number" id="Qnum2" placeholder="Enter second number">
+    <button onclick="calculateQuotient()">Calculate Quotient</button>
+    <p>Result: <span id="Qresult"></span></p>
+
+	<h2>Difference Of Two Numbers</h2>
+    <input type="number" id="Dnum1" placeholder="Enter first number">
+    <input type="number" id="Dnum2" placeholder="Enter second number">
+    <button onclick="calculateDifference()">Calculate Difference</button>
+    <p>Result: <span id="Dresult"></span></p>
+
     <script>
         function calculateSum() {
             // Get the values from the input fields
@@ -34,14 +46,39 @@
             let pnum1 = parseFloat(document.getElementById('pnum1').value);
             let pnum2 = parseFloat(document.getElementById('pnum2').value);
             
-            // Calculate the sum
+            // Calculate the product
             let product = pnum1 * pnum2;
             
             // Display the result
             document.getElementById('presult').textContent = product;
         }
+
+		   function calculateQuotient() {
+            // Get the values from the input fields
+            let Qnum1 = parseFloat(document.getElementById('Qnum1').value);
+            let Qnum2 = parseFloat(document.getElementById('Qnum2').value);
+            
+            // Calculate the Quotient
+            let Quotient = Qnum1 / Qnum2;
+            
+            // Display the result
+            document.getElementById('Qresult').textContent = Quotient;
+        }
+
+		 function calculateDifference() {
+            // Get the values from the input fields
+            let Dnum1 = parseFloat(document.getElementById('Dnum1').value);
+            let Dnum2 = parseFloat(document.getElementById('Dnum2').value);
+            
+            // Calculate the Difference
+            let Difference = Dnum1 - Dnum2;
+            
+            // Display the result
+            document.getElementById('Dresult').textContent = Difference;
+        }
     </script>
 </body>
 
 </html>
+
 
