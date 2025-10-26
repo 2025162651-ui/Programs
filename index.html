@@ -28,6 +28,12 @@
     <button onclick="calculateDifference()">Calculate Difference</button>
     <p>Result: <span id="Dresult"></span></p>
 
+	<h2>Modulo Of Two Numbers</h2>
+    <input type="number" id="Mnum1" placeholder="Enter first number">
+    <input type="number" id="Mnum2" placeholder="Enter second number">
+    <button onclick="calculateModulo()">Calculate Modulo</button>
+    <p>Result: <span id="Mresult"></span></p>
+
     <script>
         function calculateSum() {
             // Get the values from the input fields
@@ -76,9 +82,22 @@
             // Display the result
             document.getElementById('Dresult').textContent = Difference;
         }
+
+		function calculateModulo() {
+            // Get the values from the input fields
+            let Mnum1 = parseFloat(document.getElementById('Mnum1').value);
+            let Mnum2 = parseFloat(document.getElementById('Mnum2').value);
+            
+            // Calculate the Difference
+            let Modulo = Mnum1 % Mnum2;
+            
+            // Display the result
+            document.getElementById('Mresult').textContent = Modulo;
+        }
     </script>
 </body>
 
 </html>
+
 
 
